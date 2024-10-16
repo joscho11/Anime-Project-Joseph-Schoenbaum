@@ -1,0 +1,84 @@
+/* text decoration */
+h1 {
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+
+/* grouping selector: border for table and table elements (rem) (vw), font weight */
+table, th, td {
+  border: .25vw solid black;
+  border-radius: 1rem;
+  font-family: 'Grechen Fuemen', cursive;
+  font-weight: bold;
+}
+
+/* id selector to remove bullets from unordered list (px), font-style, list-style, google font */
+#attractList{
+  list-style-type: none;
+  text-align: center;
+  border: 1px solid black;
+  margin-top: 0px;
+  margin-bottom: 35px;
+  margin-right: 80px;
+  margin-left: 80px;
+  background-color: lightblue;
+  font-style: normal;
+  font-family: 'Gluten', cursive;
+}
+
+/* child selector to make h2 in section centered and green, padding (em), text-transform */
+section > h2 {
+  color:white;
+  text-align: center;
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  border: 1px solid black;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+/* pseudo element */
+section > h2::first-letter {
+  font-size: 150%;
+}
+
+/* descendant selector to underline list elements anywhere within sections, font-weight */
+section li {
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+/* psuedo-classes for anchors */
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: purple;
+}
+
+/* moving back to main link to right side of page*/
+#mainLink {
+  position: relative;
+  left:1400px;
+}
+
+img {
+ width: 500px;
+ height: 300px;
+}
+
+div {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
